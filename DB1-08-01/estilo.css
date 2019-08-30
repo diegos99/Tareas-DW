@@ -1,0 +1,31 @@
+#item-1{ /*El proposito de este selector es traer un atributo único que se nombro en el html con un id*/
+	color: orange; 
+}
+
+.clase1{ /*El proposito de este selector es traer un atributo especifico que se nombro en el html con un class*/
+	font-size: 20px;
+}
+
+div p{ /*La funcion de este selector es traer todos tags <p> que esten dentro de un div*/
+	font-family: "Times New Roman";
+	color: red;
+}
+
+div > p{ /*Todos los elementos <p> donde el padre es un elemento <div>.*/ 
+	color: yellow !important; /*en esta parte se puede apreciar el conflicto que existe entre el div>p y el div p
+	al momento de querer cambiar el color del texto, ya que uno tiene yellow y el otro un red.
+	Para poder quitar este conflicto, para fines de la tarea utilizamos un !important para darle prioridad a 
+	este bloque css.
+	NOTA: no es una buena practica*/
+	background-color: blue;
+}
+
+[id$=m-2]{ /*En este bloque estamos llamando a todos los id que tengan un atributo que termine con los caracteres m-2*/
+	font-family: "Arial";
+	font-size: 20px;
+}
+
+h1:hover{ /*Manda a traer todas los tags que sean <h1> y cuando se pase el mouse sobre dichos elementos, ocurrida una accion
+	(cambio de color, letra, tamaño...todo depende de qué le configure el desarrollador*/
+	color: red;
+}
